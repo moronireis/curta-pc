@@ -1,0 +1,77 @@
+{
+  "id": "d22-festa",
+  "teto_usd": 70,
+  "modelo_video": "bytedance/seedance-2.0",
+  "modelo_imagem": "google/nano-banana-pro",
+  "limite_prompt_video": 4000,
+  "precos_usd": {
+    "_nota": "Preço da página pública do Replicate em 15/11/2026 (sem vídeo de entrada). Vídeo: por segundo de saída. Imagem: por imagem em 1K/2K.",
+    "video_480p_s": 0.08,
+    "video_720p_s": 0.18,
+    "video_1080p_s": 0.45,
+    "video_4k_s": 1.0,
+    "imagem": 0.15
+  },
+  "base_imagem": "prompts/base_imagem.txt",
+  "base_video": "prompts/base_video.txt",
+  "itens": [
+    {
+      "codigo": "K1",
+      "tipo": "pronta",
+      "arquivo": "assets/K1.png",
+      "nota": "Folha dele, reaproveitada do D20."
+    },
+    {
+      "codigo": "K2",
+      "tipo": "imagem",
+      "prompt": "prompts/K2.txt",
+      "refs": [
+        "K1"
+      ],
+      "proporcao": "9:16",
+      "resolucao": "2K",
+      "conferir": "um rapaz só, uns vinte anos, alto, topete, jaqueta bomber vinho aberta sobre camiseta branca; três vistas de corpo inteiro + três rostos; fundo cinza neutro; mesmo acabamento 3D do K1; o rapaz de moletom não aparece; nada de letra nem logo."
+    },
+    {
+      "codigo": "K3",
+      "tipo": "imagem",
+      "prompt": "prompts/K3.txt",
+      "refs": [
+        "K1"
+      ],
+      "proporcao": "9:16",
+      "resolucao": "2K",
+      "conferir": "uma moça só, uns vinte anos, rabo de cavalo alto, argola pequena, blusa de cetim coral, calça preta; três vistas + três rostos; fundo cinza neutro; mesmo acabamento 3D; nada de letra nem logo."
+    },
+    {
+      "codigo": "K4",
+      "tipo": "imagem",
+      "prompt": "prompts/K4.txt",
+      "refs": [
+        "K1"
+      ],
+      "proporcao": "9:16",
+      "resolucao": "2K",
+      "conferir": "quarto à noite visto por trás do monitor (tela nunca à vista); cadeira vazia; cama; porta entreaberta à direita com luz âmbar; resto azul frio; ninguém; uma imagem só; nada de letra, pôster ou relógio."
+    },
+    {
+      "codigo": "T1",
+      "tipo": "video",
+      "prompt": "prompts/T1.txt",
+      "refs": [
+        "K1",
+        "K2",
+        "K3",
+        "K4"
+      ],
+      "duracao": 15,
+      "resolucao": "720p",
+      "proporcao": "9:16",
+      "audio": true,
+      "versoes": [
+        "a",
+        "b"
+      ]
+    }
+  ]
+}

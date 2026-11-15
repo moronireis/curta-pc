@@ -1,0 +1,22 @@
+# modelos, ambientes e brutos nunca entram
+*.safetensors
+*.gguf
+*.ckpt
+*.pth
+*.bin
+*.onnx
+*.7z
+*.zip
+.venv/
+venv/
+__pycache__/
+ComfyUI/
+models/
+raw/
+*.antigo-*
+estado.json
+gastos.jsonl
+.env
+.env.*
+.DS_Store
+Thumbs.db
