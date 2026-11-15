@@ -4,13 +4,15 @@ Pacote para rodar no PC (Windows, RX 7600 XT) a validação da rota gratuita do 
 
 ## Como rodar no PC
 
-1. Abra o PowerShell e baixe o repositório (privado; se pedir login, rode `gh auth login` antes):
+1. Abra o PowerShell e baixe o repositório (público; baixar não pede login):
 
    ```powershell
    cd $HOME
-   gh repo clone moronireis/curta-pc
+   git clone https://github.com/moronireis/curta-pc.git
    cd curta-pc
    ```
+
+   Para a sessão devolver o relatório por `git push`, o PC precisa estar logado no GitHub (`gh auth login`). Sem login ela trabalha igual e deixa o relatório na pasta.
 
 2. Abra o Claude Code nessa pasta:
 
